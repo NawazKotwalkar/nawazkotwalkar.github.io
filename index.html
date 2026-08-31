@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nawaz Kotwalkar — Data Scientist</title>
-<meta name="description" content="Portfolio of Nawaz Kotwalkar, Data Scientist. CanER, DataSentry and applied ML work.">
+<meta name="description" content="Portfolio of Nawaz Kotwalkar, Data Scientist. CanER, DataSentry, Health Insurance AI QA Bot and applied ML work.">
+
+<!-- Favicon: traffic-dots, matches window chrome used throughout the site -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23161b22'/%3E%3Ccircle cx='13' cy='14' r='4' fill='%23ff5f56'/%3E%3Ccircle cx='27' cy='14' r='4' fill='%23ffbd2e'/%3E%3Ccircle cx='13' cy='27' r='4' fill='%2327c93f'/%3E%3Ccircle cx='27' cy='27' r='4' fill='%233fb950'/%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -262,6 +266,7 @@ html[data-theme="light"] .term-panel{background:#0d1117; border-color:#2d333b;}
 .term-panel .row .val{color:#3fb950;}
 .term-panel .row .val.amber{color:#d29922;}
 .term-panel .row .val.blue{color:#58a6ff;}
+.term-panel .row .val.pink{color:#ec4899;}
 
 /* live demo widget */
 .demo-box{
@@ -394,7 +399,7 @@ html[data-theme="light"] .term-panel{background:#0d1117; border-color:#2d333b;}
         <div class="hero-tag">$ whoami</div>
         <div class="hero-name">Nawaz Kotwalkar</div>
         <div class="hero-role">Data Scientist<span class="cursor"></span></div>
-        <p class="hero-desc">B.Sc. Data Science graduate based in Mumbai. I build and ship applied ML systems — from a deployed healthcare wait-time predictor to a production-style data quality engine. Working toward Canadian remote roles.</p>
+        <p class="hero-desc">B.Sc. Data Science graduate based in Mumbai. I build and ship applied ML and GenAI systems — from a deployed healthcare wait-time predictor to a RAG-based policy assistant. Working toward Canadian remote roles.</p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">→ view_projects()</a>
           <a href="#contact" class="btn btn-outline">get_in_touch()</a>
@@ -416,12 +421,12 @@ html[data-theme="light"] .term-panel{background:#0d1117; border-color:#2d333b;}
     <div class="titlebar"><div class="dot-row"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="path">~/nawaz/about.md</span></div>
     <div class="about-body">
       <div>
-        <p>I'm a Data Scientist based in Mumbai with a foundation in applied mathematics and statistics. Before moving fully into building, I spent over a year as a <strong>Data Science Trainer</strong>, teaching Python, SQL, Pandas, and Power BI to 80+ students across two institutes — which is where the habit of explaining technical work in plain terms comes from.</p>
-        <p>Since then I've focused on shipping real, deployed projects rather than notebook-only work: <strong>CanER</strong>, a live ER wait-time predictor for the Canadian healthcare system, and <strong>DataSentry</strong>, a full-stack data quality auditing platform.</p>
+        <p>I'm a Data Scientist based in Mumbai with a foundation in applied mathematics and statistics. As a <strong>Data Scientist Intern at Zeno Talent</strong>, I built a live KPI dashboard connected to PostgreSQL via SQLAlchemy, delivered fraud-flag detection and auto-decision rate tracking that surfaced an estimated <strong>£120K in projected annual savings</strong>.</p>
+        <p>Since then I've focused on shipping real, deployed projects rather than notebook-only work: <strong>CanER</strong>, a live ER wait-time predictor for the Canadian healthcare system; <strong>DataSentry</strong>, a full-stack data quality auditing platform; and the <strong>Health Insurance AI QA Bot</strong>, a RAG-based policy assistant built on Google Gemini.</p>
         <div class="stat-grid">
-          <div class="stat-box"><div class="n">80+</div><div class="l">students trained</div></div>
-          <div class="stat-box"><div class="n">2</div><div class="l">deployed projects</div></div>
-          <div class="stat-box"><div class="n">94%</div><div class="l">course completion rate</div></div>
+          <div class="stat-box"><div class="n">£120K</div><div class="l">projected savings surfaced</div></div>
+          <div class="stat-box"><div class="n">3</div><div class="l">deployed projects</div></div>
+          <div class="stat-box"><div class="n">&lt;2s</div><div class="l">dashboard load time</div></div>
           <div class="stat-box"><div class="n">7.67</div><div class="l">CGPI / 10</div></div>
         </div>
       </div>
@@ -431,6 +436,7 @@ html[data-theme="light"] .term-panel{background:#0d1117; border-color:#2d333b;}
           <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span>
           <span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">XGBoost</span>
           <span class="tag">FastAPI</span><span class="tag">Streamlit</span><span class="tag">Power BI</span>
+          <span class="tag">Google Gemini</span><span class="tag">ChromaDB</span><span class="tag">RAG</span>
           <span class="tag">Docker</span><span class="tag">Feature Engineering</span><span class="tag">EDA</span>
         </div>
       </div>
@@ -438,7 +444,7 @@ html[data-theme="light"] .term-panel{background:#0d1117; border-color:#2d333b;}
   </div>
 
   <!-- PROJECTS -->
-  <div id="projects" class="section-head"><span class="hash">#</span><h2>featured_projects</h2><span class="comment">// top 2, both deployed and live</span></div>
+  <div id="projects" class="section-head"><span class="hash">#</span><h2>featured_projects</h2><span class="comment">// all deployed and live</span></div>
 
   <!-- CanER -->
   <div class="window proj-window">
@@ -498,10 +504,10 @@ html[data-theme="light"] .term-panel{background:#0d1117; border-color:#2d333b;}
     <div class="proj-body">
       <div>
         <h3>DataSentry — Data Quality Engine</h3>
-        <p class="desc">Full-stack data quality auditing platform. Scores any dataset 0–100 across nulls, duplicates, format issues, outliers, and rule violations, with a severity-weighted issue breakdown.</p>
+        <p class="desc">Full-stack data quality auditing platform. Scores any dataset across nulls, duplicates, format issues, and outliers, with a severity-weighted issue breakdown and business-cost estimates.</p>
         <ul class="proj-list">
           <li>Dependency-free CLI/engine plus a FastAPI + PostgreSQL + Streamlit service</li>
-          <li>Severity-weighted scoring across 5 data quality dimensions</li>
+          <li>Weighted scoring algorithm across 4 data quality dimensions, 5 automated checks</li>
           <li>Multi-tab dashboard with a prioritized fix queue</li>
         </ul>
         <div class="proj-links">
@@ -513,8 +519,40 @@ html[data-theme="light"] .term-panel{background:#0d1117; border-color:#2d333b;}
         <div class="th">$ cat datasentry/README</div>
         <div class="row"><span>backend</span><span class="val blue">FastAPI + Postgres</span></div>
         <div class="row"><span>ui</span><span class="val">Streamlit</span></div>
-        <div class="row"><span>score range</span><span class="val amber">0 – 100</span></div>
-        <div class="row"><span>checks</span><span class="val">5 dimensions</span></div>
+        <div class="row"><span>dimensions</span><span class="val amber">4</span></div>
+        <div class="row"><span>checks</span><span class="val">5 automated</span></div>
+        <div class="row"><span>status</span><span class="val">deployed</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Health Insurance AI QA Bot -->
+  <div class="window proj-window">
+    <div class="titlebar">
+      <div class="dot-row"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+      <span class="path">~/projects/health-insurance-qa-bot</span>
+      <span class="status live">● live</span>
+    </div>
+    <div class="proj-body">
+      <div>
+        <h3>Health Insurance AI QA Bot</h3>
+        <p class="desc">A Retrieval-Augmented Generation chatbot that answers health insurance policy questions strictly from source PDF documents — eliminating LLM hallucination and solving the "pregnancy vs. maternity" vocabulary-mismatch problem that breaks keyword search.</p>
+        <ul class="proj-list">
+          <li>Three-phase pipeline: PDF chunking/ingestion → Gemini vector embeddings into ChromaDB → context-grounded generation with cited source pages</li>
+          <li>Answers grounded strictly in uploaded policy documents, not general LLM knowledge</li>
+          <li>Custom mobile-responsive Streamlit UI with a glassmorphism design</li>
+        </ul>
+        <div class="proj-links">
+          <a href="https://health-insurance-bot.streamlit.app/" target="_blank" class="btn btn-primary">→ live demo</a>
+          <a href="https://github.com/NawazKotwalkar" target="_blank" class="btn btn-outline">source</a>
+        </div>
+      </div>
+      <div class="term-panel">
+        <div class="th">$ cat qa-bot/README</div>
+        <div class="row"><span>llm</span><span class="val pink">Google Gemini</span></div>
+        <div class="row"><span>vector db</span><span class="val">ChromaDB</span></div>
+        <div class="row"><span>retrieval</span><span class="val amber">RAG</span></div>
+        <div class="row"><span>ui</span><span class="val">Streamlit</span></div>
         <div class="row"><span>status</span><span class="val">deployed</span></div>
       </div>
     </div>
@@ -549,26 +587,14 @@ html[data-theme="light"] .term-panel{background:#0d1117; border-color:#2d333b;}
     <div class="titlebar"><div class="dot-row"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="path">~/nawaz/experience.log</span></div>
     <div class="log-body">
       <div class="log-entry">
-        <div class="log-date">Apr 2025 —<br>Feb 2026</div>
+        <div class="log-date">Jan 2026 —<br>Mar 2026</div>
         <div class="log-content">
-          <h4>Data Science Trainer</h4>
-          <div class="co">Sami Infotech, Trombay, Mumbai</div>
+          <h4>Data Scientist Intern</h4>
+          <div class="co">Zeno Talent, Mumbai, India</div>
           <ul>
-            <li>Independently delivered Data Science and programming training to 50 students, 94% completion rate</li>
-            <li>Managed full branch operations solo — scheduling, curriculum design, performance tracking across 4 courses</li>
-            <li>Built a live KPI dashboard (PostgreSQL + SQLAlchemy) tracking approval, fraud-flag, and auto-decision rate metrics as part of applied coursework</li>
-          </ul>
-        </div>
-      </div>
-      <div class="log-entry">
-        <div class="log-date">Aug 2024 —<br>Feb 2025</div>
-        <div class="log-content">
-          <h4>Data Science Trainer</h4>
-          <div class="co">Seawoods, Navi Mumbai</div>
-          <ul>
-            <li>Delivered structured Data Science training across multiple batches, 92% satisfaction and completion rate</li>
-            <li>Designed a hands-on, project-based curriculum: Python, SQL, Pandas, NumPy, and ML workflows for 30 students</li>
-            <li>Taught Power BI visualization and DAX fundamentals under senior mentor guidance</li>
+            <li>Built a live KPI dashboard connected to PostgreSQL via SQLAlchemy with 30-second auto-refresh and sub-2s load time</li>
+            <li>Delivered fraud flag detection and auto-decision rate tracking, surfacing an estimated £120K in projected annual savings</li>
+            <li>Assisted on a senior colleague's Power BI reporting work, gaining exposure to report design and DAX-driven visuals</li>
           </ul>
         </div>
       </div>
@@ -620,6 +646,7 @@ const commands = [
   {label:'Go to Contact', tag:'#contact', action:() => scrollToId('contact')},
   {label:'Open CanER live demo', tag:'↗ external', action:() => window.open('https://caner.onrender.com','_blank')},
   {label:'Open DataSentry live demo', tag:'↗ external', action:() => window.open('https://datasentry.streamlit.app','_blank')},
+  {label:'Open Health Insurance AI QA Bot', tag:'↗ external', action:() => window.open('https://health-insurance-bot.streamlit.app/','_blank')},
   {label:'Open GitHub', tag:'↗ external', action:() => window.open('https://github.com/NawazKotwalkar','_blank')},
   {label:'Open LinkedIn', tag:'↗ external', action:() => window.open('https://linkedin.com/in/nawazkotwalkar','_blank')},
   {label:'Email Nawaz', tag:'mailto', action:() => window.location.href='mailto:nawazkotwalkaroffice@gmail.com'},
